@@ -194,3 +194,8 @@ function reviewInput() {
 function removeReview() {
     document.getElementById("showInput").innerHTML = "";
 }
+
+function getrangedata() {
+    var slider = document.getElementById("scale");
+    document.getElementById("rangedisplay").value = slider;
+  }
