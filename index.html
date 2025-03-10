@@ -256,14 +256,37 @@ Purpose: Patient Registration Form for Family Creek Clinic (MIS 3371 HW Assignme
 
 </div>
 
-<div class="row">
+<tr class="form">
+    <td align="right">
+  <label for="scale">On a scale from 1-10, how much would you rate your pain?<br>(1 being the least and 10 being the worst)</label><br><br>
+    </td>
+    <td align="center">&nbsp;1
+  <input type="range"
+         class="slider"
+         id="scale"
+         name="scale"
+         min="1"
+         max="10"
+         list="increments"
+         >
 
-  <p><label for="dscp">If selected other, please explain your symptoms:</label></p>
-  
-  <textarea id="dscp" name="dscp" rows="4" cols="50"></textarea><br><br>
-  
-
-</div>
+         10&nbsp;<br>
+         <span id="rangedisplay"></span>
+         <datalist id="increments">
+            <option value="1"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+         </datalist>
+    </td>
+</tr>
 
 <div class="row">
   <label for="pain">On a scale from 1-10, how much would you rate your pain?<br>(1 being the least and 10 being the worst)</label><br><br>
